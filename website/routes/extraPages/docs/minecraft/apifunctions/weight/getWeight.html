@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: weight/getProfile</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : weight/getProfile</h1>
+
+    <h2>Not to be messed up with getProfile from networth.js</h2>
+
+    <h2> Params</h2>
+    <h3>Username</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The persons to get the profiles from.<br>
+    </p>
+
+    <h3> username </h3>
+    <p>
+        @type : string<br>
+        Use : <br>
+        The persons username.
+    </p>
+
+    <h3> type </h3>
+    <p>
+        @type : "lily" | "senither"<br>
+        Use : <br>
+        The type of weight to return.
+    </p>
+
+    <h3> overall </h3>
+
+    <p>
+        @type : boolean <br>
+        Use : <br>
+        The option to return either the weight object or overall weight number.
+    </p>
+
+    <h2> Returns </h2>
+    <h3>Weight</h3>
+    <p>
+        @type object<br>
+        Use : <br>
+        The specific weight value or the entire weight object.
+    </p>
+
+    <pre class="prettyprint">
+import { getProfile } from "dist/minecraft/chatHandling/commands/weight.js";
+
+const porfile = await getProfile("puppynuff", "blueberry");
+    </pre>
+
+    <p id="import"></p>
+</body>
+</html>

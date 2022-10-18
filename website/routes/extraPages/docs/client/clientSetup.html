@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: clientSetup</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : clientSetup</h1>
+
+    <h2> Params </h2>
+    <h3>token</h3>
+    <p>
+        @type strings<br>
+        Use : <br>
+        Takes in the token for the discordBot.<br>
+        Valid param : Any discord bot token.
+    </p>
+    <h3>
+        Intents
+    </h3>
+    <p>
+        Refer to <a href="/docs/client/setupIntents">setupIntents</a> for valid inputs<br>
+        Pram name in page : intents
+    </p>
+
+    <h2> Returns </h2>
+    <h3> client </h3>
+    <p>
+        @type Client (Discord.js)<br>
+        Use : <br>
+        Returns a usable discord client for the bot.
+    </p>
+
+    <pre class="prettyprint">
+import { clientSetup } from "/dist/discord/client.ts"; // directed from the root dir.
+
+
+var intents : Array<<string>string</string>> = ["messagecontent", "guilds", "guildmessages", "guildreactions"]
+        
+correctedIntents = setupIntents(intents);
+var client : any = clientSetup(intents);
+// I use any so that you can add collections, since if you use Client<<boolean>boolean</boolean>> it doesnt allow you to.
+</pre>
+
+<p id="import"></p>
+</body>
+</html>

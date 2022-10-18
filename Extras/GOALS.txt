@@ -1,0 +1,34 @@
+URGENT
+1. Catch this version up to the js version (This will be my main developed thing now, since I am moving off of js.)
+2. Set up website / docs.
+3. Update github repo.
+4. Resetup discord-minecraft passthrough.
+
+OPTIONAL
+5. Create a custom readline package. (I Dont like the current one right now.)
+6. Create a custom glob package ( The warning whenever I start a bot due to glob is annoying. )
+7. Change some commands into context menus / ect.
+8. Have the website update the mongoose database.
+9. Custom reaction roles.
+10. Custom "automod"
+11. Custom music player.
+12. Make a way to interaction with discord.
+
+
+EXTREME PROJECTS
+13. Replace external modules entirely (except discord.js and mineflayer)
+14. (Probably not going to happen) Custom discord.js release (So I can have a custom one where I have control over changes.)
+15. Make an api for the bot.
+16. Create window for logs and stuff instead.
+17. Add the ability to watch what the bot is watching in react.
+
+COMPLETE :
+Terminal updates.
+
+
+Questions : [
+    Why would I put 11 before 12 instead of afterwards. & Why not mineflayer.
+
+    I feel like making an on site database & console coloring would be easier than making a thing on the discord api, expecially since it would need its own 
+    revamp of all of the code.
+]

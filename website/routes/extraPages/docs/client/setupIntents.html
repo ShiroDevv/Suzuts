@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js" defer></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title>Suzu : setupIntents</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">
+        setupIntents
+    </h1>
+
+    <h2> Params </h2>
+    <h3>intents</h3>
+    <p>
+        @type : Array[string]
+        <br>Use: <br>
+        Takes in the intents as a array of strings, and converts them into IntentBitsField
+    <h4> Valid params</h4>
+    <p>
+        Undefined : Converts it into all.<br>
+        all : returns every intentBit.<br>
+        dmreactions : Converts to DirectMessageReactions<br>
+        dm : Converts to DirectMessages <br>
+        bans : Converts to GuildBans<br>
+        emojis : Converts to GuildEmojisAndStickers<br>
+        integrations : Converts to GuildIntegrations<br>
+        invites : Converts to GuildInvites<br>
+        members : Converts to GuildMembers<br>
+        guildmessagereactions : Converts to GuildMessageReactions<br>
+        guildmessagetyping : Converts to guildmessagetyping<br>
+        guildmessages : Converts to GuildMessages<br>
+        presences : Converts to GuildPresences<br>
+        scheduledevents : Converts to GuildScheduledEvents<br>
+        voicestates : Converts to GuildVoiceStates<br>
+        webhooks : Converts to GuildWebhooks<br>
+        guilds : Converts to Guilds <br>
+        messagecontent : Converts to MessageContent
+    </p>
+    </p>
+
+    <h2>
+        Returns
+    </h2>
+    <h3>
+        returnIntents
+    </h3>
+    <p>@type Array[IntentBitsField]<br>
+        Use : <br>
+        Returns all of the intents requested.<br>
+    </p>
+    <pre class="prettyprint">
+import { setupIntents } from "/dist/discord/client.ts"; // directed from the root dir.
+import { Client } from "discord.js";
+            
+var intents : Array<<string>string</string>> = ["messagecontent", "guilds", "guildmessages", "guildreactions"]
+var correctedIntents : Array<<IntentBitsField>IntentBitsField</IntentBitsField>> = [];
+
+correctedIntents = setupIntents(intents);
+
+const client = new Client({
+    intents : correctedIntents
+})    
+</pre>
+
+    <p id="import""></p>
+</body>
+
+</html>

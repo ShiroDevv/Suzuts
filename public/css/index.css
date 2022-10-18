@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(7, 7, 7);
+}
+h1 {
+    margin-top: 3.5%;
+    color: aliceblue;
+    left: 10px;
+    margin-left: 1%;
+}
+
+h2 {
+    color: aliceblue;
+    margin-left: 1%;
+}
+
+h3 {
+    color: aliceblue;
+    margin-left: 1%;
+}
+
+h4 {
+    color: aliceblue;
+    margin-left: 1%;
+}
+
+p {
+    color: aliceblue;
+    margin-left: 1%;
+    font-size: large;
+}
+
+pre {
+    background-color: rgb(76, 101, 129);
+    margin-left: 1%;
+}
+
+.topnav {
+    margin-left: -10px;
+    margin-left: 1%;
+}
+
+button {
+    border-radius: 7px;
+    height: 30px;
+    margin-left: 1%;
+}

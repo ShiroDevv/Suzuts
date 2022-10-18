@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: getUUid</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : getUuid</h1>
+
+    <h2> Params</h2>
+    <h3>Username</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The username to grab from the mojang api.<br>
+    </p>
+
+    <h2> Returns </h2>
+    <h3>UUid</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The uuid to use for something like the hypixel api.    
+    </p>
+
+    <pre class="prettyprint">
+import getUuid from 'dist/minecraft/chatHandling/utils/getUuid.js';
+
+//? Something you could do with it.
+const uuid = await getUuid("puppynuff");
+
+console.log(uuid);
+
+    </pre>
+
+    <p id="import"></p>
+</body>
+</html>

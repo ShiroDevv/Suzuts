@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(28, 27, 34);
+    margin: 50px 0px 0px 270px;
+}
+
+h1 {
+    margin-top: 4%;
+    color: aliceblue;
+    left: 10px;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+h4 {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+
+button {
+    border-radius: 4px;
+    background-color: rgb(28, 27, 34);;
+    border-color: rgb(43, 42, 48);
+    text-emphasis-color: white;
+    font-size: large;
+    color : aliceblue;
+}
+
+pre {
+    background-color: rgb(255, 255, 255);
+}
+
+li {
+    color: aliceblue;
+}
+
+.prettyprint {
+    width: fit-content;
+    border-radius: 10px;
+    font-size: x-large;
+    background-color:rgb(37, 37, 41);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Suzu: setupExpress</title>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <script src="/javascript/sidebar.js" defer></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">setupExpress</h1>
+    <h2>Use :</h2>
+    <h2>What this does</h2>
+    <p>
+        This code takes alll of the files in the extraPages/docs folder and turns the html files into webpages, with the directory name.<br>
+        It also creates the base docs page and the home page.<br>
+    </p>
+
+    <p>This funtion takes no parameters</p>
+
+    <pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Suzu: function / page&lt;/title&gt;
+    &lt;script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"&gt;&lt;/script&gt; &lt;!--For code coloring--&gt;
+    &lt;link rel="stylesheet" href="/css/mainSheet.css"&gt;
+    &lt;script src="/javascript/sidebar.js" defer&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" href="/css/sidebar.css"&gt;
+&lt;/head&gt;
+
+&lt;body onload="importsidebar()"&gt; &lt;!-- Importing sidebar (also why there is a id called top and import)-->
+    &lt;h1 id="top"&gt;Name of function&lt;/h1&gt;
+    &lt;h2&gt;Use :&lt;/h2&gt;
+    &lt;h2&gt;What this does&lt;/h2&gt;
+    &lt;p&gt;
+        Explain what the code does.
+    &lt;/p&gt;
+
+    &lt;p&gt;Parameters&lt;/p&gt;
+
+    &lt;pre class="prettyprint"&gt;
+        Code for the class
+    &lt;/pre&gt;
+    &lt;p id="import"&gt;&lt;/p&gt;
+&lt;/body&gt;
+    </pre>
+
+
+    <pre class="prettyprint">
+        //? Setting up the page
+        app.use("/pagepath/pagename", (req: any, res: any) => {
+            res.sendFile(
+                path.join(
+                    process.cwd().toString().replaceAll("\\", "/") +
+                    "/website/routes/path/pagename"
+                )
+            );
+        });
+    </pre>
+    <p id="import"></p>
+</body>

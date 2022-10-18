@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: handleMessages</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : handleMessages</h1>
+
+    <h2> Params</h2>
+    <h3>Mesage</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The message returned from the mineflayer bot.<br>
+        Valid param : any valid string
+    </p>
+
+    <h2> Returns </h2>
+    <p>
+        @type string<br>
+        Use : <br>
+        Returns the response message from the bot.
+    </p>
+
+    <h3> Submethods (Methods called in the method)</h3>
+    <h4>
+        <a href="/docs/minecraft/chatHandling/removeExtras"><button>removeExtras</button></a>
+        <a href="/docs/minecraft/chatHandling/getUserName"><button>getUserName</button></a>
+    </h4>
+
+    <pre class="prettyprint">
+        import { handleMessages } from '/dist/minecraft/chatHandling/messageHandler';
+        //? Creating the bot
+        const bot = mineflayer.createBot({
+            username : username,
+            password: password,
+            auth : auth || "microsoft",
+            host : host,
+            version: "1.8.9"
+        })
+    
+        //? When the bot get a message
+        bot.on("message", (message) => {
+                console.log(message.toString());
+                
+            var response = handleMessages(message);
+    
+            if(response != undefined) bot.chat('/gc ' + response);
+        });
+    </pre>
+
+    <p id="import"></p>
+</body>
+</html>

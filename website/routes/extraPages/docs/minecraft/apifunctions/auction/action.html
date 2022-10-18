@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: auction</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : auction</h1>
+
+    <h2> Params</h2>
+    <h3>Username</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The person to respond to.<br>
+    </p>
+
+    <h3> item </h3>
+    <p>
+        @type : string<br>
+        Use : <br>
+        The item to pull from the id.
+    </p>
+
+    <h2> Returns </h2>
+    <h3>Item response</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The response message    
+    </p>
+
+    <pre class="prettyprint">
+import auction from "dist/minecraft/chatHandling/commands/auction.js";
+
+console.log(await auction("puppynuff", "Livid dagger"));
+    </pre>
+
+    <p id="import"></p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: updateItems</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : updateItems</h1>
+
+    <h2> Params </h2>
+    <h3> item </h3>
+    <p>
+        @type : string<br>
+        use : <br>
+        The item to pull from the array.
+    </p>
+
+    <h3> Items </h3>
+    <p>
+        @type : Array&lt;any&gt;
+        Use : <br>
+        The array of items to pull from.
+    </p>
+
+    <h2> Returns </h2>
+    <h3>Item response</h3>
+    <p>
+        @type object<br>
+        Use : <br>
+        The object with the data from the item.
+    </p>
+
+    <pre class="prettyprint">
+import { updateItems, getItem } from "dist/minecraft/chatHandling/commands/auction.js";
+
+var items : Array&lt;any&gt; = await updateItems();
+console.log(await getItem(items, "Livid dagger"));
+
+    </pre>
+    <p id="import"></p>
+</body>
+
+</html>

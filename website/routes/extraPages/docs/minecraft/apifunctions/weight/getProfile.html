@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: weight/getProfile</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : weight/getProfile</h1>
+
+    <h2>Not to be messed up with getProfile from networth.js</h2>
+
+    <h2> Params</h2>
+    <h3>Username</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The persons to get the profiles from.<br>
+    </p>
+
+    <h3> profileName </h3>
+    <p>
+        @type : string<br>
+        Use : <br>
+        The profile to return.
+    </p>
+
+    <h2> Returns </h2>
+    <h3>profile</h3>
+    <p>
+        @type object<br>
+        Use : <br>
+        The current profile or the profile that has the same cutename as "profileName".
+    </p>
+
+    <pre class="prettyprint">
+import { getProfile } from "dist/minecraft/chatHandling/commands/weight.js";
+
+console.log(await getProfile("puppynuff", "blueberry"));
+    </pre>
+
+    <p id="import"></p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: setUpBot</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : SetUpBot</h1>
+
+    <h2> Params</h2>
+    <h3>Username</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The username used to log into minecraft<br>
+        Valid param : Any valid minecraft email
+    </p>
+
+    <h3>Host</h3>
+    <p>
+        @type string<br>
+        Use: <br>
+        The server to join<br>
+        Valid param : Any currently running minecraft servers
+    </p>
+
+    <h3>password</h3>
+    <p>
+        @type string | undefined<br>
+        Use : <br>
+        Password used to log into minecraft (if microsoft account, automatically removed at the start)<br>
+        Valid param : A minecraft password
+    </p>
+
+    <h3>auth</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The authorization method to login to minecraft.<br>
+        Valid param : "mojang" | "microsoft" | "offline"
+    </p>
+
+    <h2> Returns </h2>
+    <p>
+        @type any (Dont know mineflayers bot type, decided to return any.)
+        Use : <br>
+        Returns a usable minecraft bot that logs guild messages<br>
+        <h3> IN DEVELOPMENT. WILL HAVE NEW FEATURES BUT VOLATILE. </h3>
+    </p>
+
+    <pre class="prettyprint">
+import { setUpBot } from "/dist/minecraft/setupBot";
+
+var bot = setupBot("username", "mc.hypixel.net", undefined, "microsoft");
+    </pre>
+
+    <p id="import"></p>
+</body>
+</html>

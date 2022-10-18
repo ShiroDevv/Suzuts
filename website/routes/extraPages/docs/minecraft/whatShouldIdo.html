@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: whatShouldIDo</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : whatShouldIDo</h1>
+
+    <h2> Params</h2>
+    <h3>username</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The username of the person asking.<br>
+        Valid param : any valid string
+    </p>
+
+    <h2> Returns </h2>
+    <p>
+        @type string<br>
+        Use : <br>
+        Returns the random thing from the bot.
+    </p>
+
+    <pre class="prettyprint">
+import whatShouldIDo from 'src/minecraft/chatHandling/commands/whatShouldIDo.ts';
+
+console.log(await whatShouldIDo("puppynuf"));
+    </pre>
+
+    <p id="import"></p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: networth/getProfile</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : networth/getProfile</h1>
+
+    <h2>Not to be messed up with getProfile from weight.js</h2>
+
+    <h2> Params</h2>
+    <h3>uuid</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The persons to get the profiles from.<br>
+    </p>
+
+    <h3> apiKey </h3>
+    <p>
+        @type : string<br>
+        Use : <br>
+        The hypixel api key.
+    </p>
+
+    <h2> Returns </h2>
+    <h3>profile</h3>
+    <p>
+        @type object<br>
+        Use : <br>
+        The current profile.
+    </p>
+
+    <pre class="prettyprint">
+import { getProfile } from "dist/minecraft/chatHandling/commands/networth.js";
+import getUuid from 'dist/minecraft/chatHandling/utils/getUuid.js';
+import { API_KEY } from 'dist/minecraft/chatHandling/utils/getUuid.js'
+
+const uuid = getUUid("puppynuff");
+
+const profile = await getProfile(uuid, API_KEY)
+
+console.log(profile);
+</pre>
+
+    <p id="import"></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="/javascript/sidebar.js"></script>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/mainSheet.css">
+    <title> Suzu: weight</title>
+</head>
+
+<body onload="importsidebar()">
+    <h1 id="top">Suzu : weight</h1>
+
+    <h2> This is a wrapper for a mineflayer bot. It uses <a href="/docs/minecraft/apifunctions/weight/getWeight">getWeight</a> and <a href="/docs/minecraft/apifunctions/weight/getProfile">getProfile</a></h2>
+    <h2> Params</h2>
+    <h3>Username</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The persons username to get the weight for.<br>
+    </p>
+
+    <h3> type </h3>
+    <p>
+        @type : "lily" | "senither"<br>
+        Use : <br>
+        The type of weight to return
+    </p>
+
+    <h2> Returns </h2>
+    <h3>Weight response</h3>
+    <p>
+        @type string<br>
+        Use : <br>
+        The response message    
+    </p>
+
+    <pre class="prettyprint">
+import weight from "dist/minecraft/chatHandling/commands/weight.js";
+
+console.log(await weight("puppynuff", "senither"));
+    </pre>
+
+    <p id="import"></p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="/css/mainSheet.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <script src="/javascript/sidebar.js" defer></script>
+        <title>Suzu : Envexports</title>
+    </head>
+
+    <body onload="importsidebar()">
+        <h1 id="top"> envExports</h1>
+
+        <h2> Use: </h2>
+        <h2> This exports the specified ENVs in the files</h2>
+        <p>
+            Currently this just exports TOKEN, PASSWORD and AUTH to login to things
+        </p>
+
+        <pre class="prettyprint">
+import { TOKEN } from './dist/importantFiles/env/envExports';
+import { clientSetup } from './dist/importantFiles/env/envExports';
+
+var client = clientSetup(TOKEN, ["all"]);
+        </pre>
+
+        <p id="import"></p>
+    </body>
+</html>

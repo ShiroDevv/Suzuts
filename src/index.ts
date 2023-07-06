@@ -73,16 +73,7 @@ if (auth != "microsoft" && auth != "mojang" && auth != 'offline') {
     auth = "microsoft";
 }
 
-//? Creating the bot
-//?                   username  Host             password   auth               limits (This says weather or not the bot can kick, ect.)
-// const bot2 = setUpBot("_Hakari", "mc.hypixel.net", PASSWORD, auth || 'microsoft', true);
-//? They got rid of the new guild already.
-const bot = setUpBot("MoonSakuras", "mc.hypixel.net", PASSWORD, auth || 'microsoft', true);
-
-// bot2.on("message", async(message : any) => {
-//     if(message.toString().includes("tanjili")) return bot.chat("/g mute tanjili 30d")
-// })
-
+const bot = setUpBot("", "mc.hypixel.net", PASSWORD, auth || 'microsoft', true);
 //? If the bots get a message send the message to the passthrough channel.
 bot.on("message", async (message: any) => {
     if (message.toString().includes("You're currently guild muted for")) return bot.chat('/g unmute ' + bot.username);
